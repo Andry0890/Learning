@@ -1,0 +1,182 @@
+/* Параметры тела */
+body{
+    margin:0;
+    font-size:16px;
+    background-color: darkcyan;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+/* Обращение к общему расположению файла */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+/* Параметры инструкции */
+.custome-box{
+    max-width: 700px;
+    background-color: darkseagreen;
+    margin:100px auto;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.custome-box::before,
+.custome-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* Скрытие первого окна */
+.home-box.hide{
+    display: none;
+}
+/* Размер текста инструкции */
+.home-box h2{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+/* Параметры первого окна */
+.home-box p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color: black;
+    font-weight: 400;
+
+}
+/* Размер текста*/
+.home-box p span{
+    font-weight: 500;
+
+}
+/* Размер большой кнопки */
+.home-box .Btn{
+    margin-top: 20px;
+
+}
+/* Параметры большой кнопки */
+.Btn {
+    padding: 15px 45px;
+    background-color: darkgreen;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+
+/* Параметры маленькой кнопки */
+.btn{
+    padding: 15px 45px;
+    background-color: darkgreen;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+/* Параметры номеров вопросов */
+
+.Quiz-box .question-number,
+.Quiz-box .question-text,
+.Quiz-box .option-container,
+.Quiz-box .next-question-btn,
+.Quiz-box .answers-indicator{
+     width: 100%;
+     float: left;
+}
+
+.Quiz-box .question-number {
+    font-size: 18px;
+    color: darkgreen;
+    font-weight: 500;
+    border: 1px;
+    solid-color: black;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+/* Параметры текста вопросов */
+.Quiz-box .question-text{
+   font-size:22px;
+    color: black;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin:0;
+
+}
+/* Параметры окна вопросов */
+
+.Quiz-box .option-container .option{
+    background-color:#cccccc;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color:#000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+/* обращение к маленькой кнопке*/
+.Quiz-box .btn{
+    margin: 15px;
+
+}
+.Quiz-box .answers-indicator{
+    border-top: 3px solid #cccccc;
+
+}
+
+/* Индикатор окна ответов */
+.Quiz-box .answers-indicator div{
+    height: 40px;
+    width: 40px;
+    display: inline-block; /* Возможность будущего редактирования*/
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 9px; /* отступ между иконками ответов */
+    margin-top: 15px;
+}
+.result-box{
+    text-align: center;
+}
+.result-box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: darkgreen;
+}
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.result-box table td{
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+
+}
+.result-box.btn{
+    margin-right: 30px;
+
+}
+
+
