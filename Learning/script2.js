@@ -1,40 +1,25 @@
 "use strict";
 
-//let num = 50;
 
-//while (num < 50) {  console.log (num);
-  //  num++;
-//}
+const questions = {
+  [5]: 'Меньше смотри новостей, и все будет хорошо',
+ };
 
-//let num = 50;
+let primeTime = prompt('Оцени начало 2022 года по десятибальной шкале!', '');
 
-//for (let i = 1; i < 33; i++) {
-    //console.log(num);
-    
-//}
-let fruit = prompt('Какой фрукт самый классный?', '');
+if (primeTime < 5) {
+alert( 'Значит ты пересмотрел много зарубежных новостей!' );
+} else if (primeTime > 5) {
+alert( 'Поздравляю, ты скорее всего аудитория 1 канала!' );
+} else {
+alert('На самом деле все нормально');
+}
+alert (questions[5]);
 
-let bag = {
-  pinapple: 'Yes, okay',
-  model: 45,
-  price: 46500,
-  data: 2022,
-};
-if (fruit != 'pinapple' || null) alert ('Вот ты кадр');
-// else (fruit = 0) alert ('Ну как так то?');
- alert(bag[fruit]);
-let meat = confirm('Мясо курицы хорошее?');
-// if (meat = true) alert ('you good boy');
- // (meat = true) alert ('you bad boy');
- switch (meat) {
-   case false:
-   alert ('bad boyz');
-   break;
-   case true:
-   alert ('Good boyz');
-   break;
- }
+let games = prompt ('Хочешь заняться чем то полезным?', '');
 
+let message = (games = 'Да') ? 'Ок, тогда оставим политику в покое и начнем прокачивать JavaScript!' :
+(games = 'Нет') ? 'Хорошо, тогда не смею тебя беспокоить!' :
+'Творится какая то непонятка, попробуй ответить подругому!' ;
 
-
-alert(meat);
+alert( message );
