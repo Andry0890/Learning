@@ -1,6 +1,4 @@
 
-
-
 const quiz = [
     {
         q: 'Where are penguins live?',
