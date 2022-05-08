@@ -31,6 +31,8 @@ function init() {
 function renderResult() {
     
     quizBox.classList.add("hide");
+    resultBox.classList.remove("hide");
+    
     let quizTotal = quiz.length;
     let rightAnswers = 0;
     let wrongAnswers = 0;
@@ -39,7 +41,7 @@ function renderResult() {
     let totalWrong = document.querySelector(".total-wrong");
     let percentage = document.querySelector(".percentage");
     let totalScore = document.querySelector(".total-score");
-    resultBox.classList.remove("hide");
+    
     totalQuestion.innerHTML = quizTotal;
     for (let i = 0; i < answers.length; i++) {
         let answer = answers[i]
