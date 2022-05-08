@@ -4,7 +4,7 @@
 
     <title>Quiz App</title>
      <meta name ="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="/New Quiz/css/file.css">
+    <link rel="stylesheet" href="/css/file.css">
 
     </head>
 
@@ -15,44 +15,37 @@
     <button type="button" class="Btn">Start Quiz</button>
 </div>
 
-<div class="Quiz-box custome-box hide">
+<div class="Quiz-box custome-box">
     <div class="question-number">
-            Question 1 of 5
+            Question <span id="quiz-count">-</span> of 5
     </div>
     <div class="question-text">
-        
+
         Where are penguins live?
     </div>
     <div class="option-container">
-        <!-- <div class="option">Arctic</div>
-        <div class="option">Subtropic</div>
-        <div class="option">Tropic<     /div>
-        <div class="option">Desert</div>
-        <div class="option">South pole</div> -->
+<!--        <div class="option">Arctic</div>-->
+<!--        <div class="option">Subtropic</div>-->
+<!--        <div class="option">Tropic</div>-->
+<!--        <div class="option">Desert</div>-->
+<!--        <div class="option">South pole</div>-->
+    </div>
+    <!-- <div class="next-question-btn">
+        <button type="button" onclick="onNext()" class="btn">Next</button>
     </div>
     <div class="next-question-btn">
-        <button type="button" class="btn">Next</button>
-    </div>
-    <div class="answers-indicator">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-
+        <button type="button" id="next-2" class="btn">Next 2</button>
+    </div> -->
+    <div class="next-question-btn">
+        <button type="button" onclick="reset()" class="btn">Reset</button>
+  
 </div>
-<div class="result-box custome-box">
+<div class="result-box custome-box hide">
     <h1>Quiz Result</h1>
     <table>
         <tr>  <!Контейнер таблицы >
             <td>Total Question</td> <! Текст в пределах строки >
             <td><span class="total-question">5</span></td>
-        </tr>
-        <tr>  <!Контейнер таблицы >
-            <td>Attempt</td> <! Попытки >
-            <td><span class="total-attempt">4</span></td>
         </tr>
         <tr>  <!Контейнер таблицы >
             <td>Correct</td> <! Правильно >
@@ -71,8 +64,8 @@
             <td><span class="total-score">3 / 5</span></td>
         </tr>
     </table>
-    <button type="button" class="btn">Go To Home</button>
-    <button type="button" class="btn">Try Again</button>
+    <button onclick="reset()" type="button" class="btn">Try Again</button>
+    
 </div>
 
 
