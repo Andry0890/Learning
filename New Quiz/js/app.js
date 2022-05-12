@@ -3,6 +3,7 @@
 
 console.log(quiz[0]);
 var currentQuestionIndex= 0;
+var category;
 let answers = [];
 let quizBox = document.querySelector('.Quiz-box');
 let resultBox = document.querySelector(".result-box");
@@ -18,6 +19,8 @@ function onNext() {
 function init() {
     currentQuestionIndex = 0;
     answers = [];
+    category = new URL(window.location.href).searchParams.get("category")
+    console.log("Категория", category)
     renderQuiz();
 }
 
@@ -47,6 +50,8 @@ function renderResult() {
     percentage.innerHTML = percentValue + "%";
     totalScore.innerHTML = calculateScore(percentValue);  
 }
+
+
 
 function calculateScore(percentage) {
     let score = 0;
