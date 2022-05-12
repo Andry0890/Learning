@@ -20,6 +20,10 @@ h2 {
     height: 1000px;
     background: #cccccc;
 }
+.button {
+    width: 75px;
+    font-size: 34px;
+}
 .header {
     border-style: solid;
     display: block;

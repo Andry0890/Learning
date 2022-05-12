@@ -2,7 +2,7 @@
 body{
     margin:0;
     font-size:16px;
-    background-color: darkcyan;
+    background-color: #689374;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 
@@ -18,7 +18,7 @@ body{
 /* Параметры инструкции */
 .custome-box{
     max-width: 700px;
-    background-color: darkseagreen;
+    background-color: #8aa58a;
     margin:100px auto;
     padding: 30px;
     border-radius: 10px;
@@ -79,7 +79,7 @@ body{
 /* Параметры маленькой кнопки */
 .btn{
     padding: 15px 45px;
-    background-color: darkgreen;
+    background-color: #355435;
     color: aliceblue;
     border: none;
     border-radius: 5px;
