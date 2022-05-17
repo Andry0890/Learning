@@ -1,3 +1,50 @@
 body {
-    background: rgb(182, 145, 145);
+    background: #689374;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.custome-box {
+    max-width: 700px;
+    background-color: #8aa58a;
+    margin:100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px #00000059;
+    width: 700px;
+    height: 480px;
+
+}
+
+.custome-box h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 175px);
+    grid-template-rows: repeat(3, 130px);
+  } 
+
+  .grid > * {
+    /*фоновый цвет*/
+    background-color: #c5d1c8;
+   /* border: 1px solid #285635;
+    /*скругление углов*/
+    border-radius: 10px;
+    /*расстояние от одной границы ячейки до другой*/
+    margin: 3px;
+    text-align: center;
+    box-shadow: 0 0 7px 0px #315745;
+  }
+  .img {
+    max-height: 100%;
+    max-width: 100%;
+
+  }
+

@@ -1,8 +1,6 @@
 
-
-
 console.log(quiz[0]);
-var currentQuestionIndex= 0;
+let currentQuestionIndex= 0;
 var category;
 let answers = [];
 let quizBox = document.querySelector('.Quiz-box');
@@ -93,14 +91,11 @@ function renderQuiz() {
         // Добавляем полученный div в нужном нам месте
         optionContainer.appendChild(optionElm);
     }
-    // options.forEach((option, i) => {
-    //     var optionElm = createOption(i, option);
-    //     optionContainer.appendChild(optionElm);
-    // });
+    
     currentQuestionIndex++;
 }
 function createOption(index, quizText) {
-    var option = document.createElement('div');
+    let option = document.createElement('div');
     option.classList.add('option');
     option.classList.add('option-' + index);
     option.innerText = quizText;
