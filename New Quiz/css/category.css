@@ -22,6 +22,18 @@ body {
     margin-bottom: 15px;
     text-align: center
 }
+ 
+  button.select-category {
+    width: 172px;
+    height: 41px;
+    margin-left: 385px;
+    margin-top: -37px;
+    position: relative;
+    right: 28px;
+    bottom: 48px;
+}
+
+
 
 
 
@@ -32,19 +44,11 @@ body {
   } 
 
   .grid > * {
-    /*фоновый цвет*/
     background-color: #c5d1c8;
-   /* border: 1px solid #285635;
-    /*скругление углов*/
     border-radius: 10px;
-    /*расстояние от одной границы ячейки до другой*/
     margin: 3px;
     text-align: center;
     box-shadow: 0 0 7px 0px #315745;
   }
-  .img {
-    max-height: 100%;
-    max-width: 100%;
-
-  }
+  
 

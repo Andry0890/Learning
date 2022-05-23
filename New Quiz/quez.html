@@ -10,69 +10,56 @@
 
 <body onload="init()">
 
-
-    <div>
-        <div><a href="category.html">Вернуться</a></div>
+    
+    <div class="Quiz-box custome-box">
+        <div class="question-number">
+            Вопрос <span id="quiz-count">-</span> 
+        </div>
+        <div class="question-text">
+            
+            
+        </div>
+        <div class="option-container">
+            <!--        <div class="option">Arctic</div>-->
+            <!--        <div class="option">Subtropic</div>-->
+            <!--        <div class="option">Tropic</div>-->
+            <!--        <div class="option">Desert</div>-->
+            <!--        <div class="option">South pole</div>-->
+        </div>
+        <!-- <div class="next-question-btn">
+            <button type="button" onclick="onNext()" class="btn">Next</button>
+        </div>
+        <div class="next-question-btn">
+            <button type="button" id="next-2" class="btn">Next 2</button>
+        </div> -->
+        <div class="next-question-btn">
+        </div>
+        <button type="button" onclick="reset()" class="btn">Сбросить результаты</button>
+        <button tupe="button" class="btn2"><a href="category.html">Выбор категории вопросов</a></button>
+        </div>
     </div>
-
-<div class="home-box custome-box hide">
-    <h2>Instruction:</h2>
-    <p>Total Number of questions: <span class="Total-questions">5</span> </p>
-    <button type="button" class="Btn">Start Quiz</button>   
-</div>
-
-<div class="Quiz-box custome-box">
-    <div class="question-number">
-            Question <span id="quiz-count">-</span> of 5
-    </div>
-    <div class="question-text">
-
-        Where are penguins live?
-    </div>
-    <div class="option-container">
-<!--        <div class="option">Arctic</div>-->
-<!--        <div class="option">Subtropic</div>-->
-<!--        <div class="option">Tropic</div>-->
-<!--        <div class="option">Desert</div>-->
-<!--        <div class="option">South pole</div>-->
-    </div>
-    <!-- <div class="next-question-btn">
-        <button type="button" onclick="onNext()" class="btn">Next</button>
-    </div>
-    <div class="next-question-btn">
-        <button type="button" id="next-2" class="btn">Next 2</button>
-    </div> -->
-    <div class="next-question-btn">
-        <button type="button" onclick="reset()" class="btn">Reset</button>
-   </div> 
-
-
-</div>
 <div class="result-box custome-box hide">
-    <h1>Quiz Result</h1>
+    <h1>Результат викторины</h1>
     <table>
-        <tr>  <!Контейнер таблицы >
-            <td>Total Question</td> <! Текст в пределах строки >
-            <td><span class="total-question">5</span></td>
+        
+        <tr>  
+            <td>Правильных ответов</td> 
+            <td><span class="total-correct"></span></td>
         </tr>
-        <tr>  <!Контейнер таблицы >
-            <td>Correct</td> <! Правильно >
-            <td><span class="total-correct">3</span></td>
+        <tr>  
+            <td>Ошибок</td>
+            <td><span class="total-wrong"></span></td>
         </tr>
-        <tr>  <!Контейнер таблицы >
-            <td>Wrong</td> <! Ошибки >
-            <td><span class="total-wrong">1</span></td>
+        <tr>  
+            <td>Проценты</td> 
+            <td><span class="percentage"></span></td>
         </tr>
-        <tr>  <!Контейнер таблицы >
-            <td>Percentage</td> <! Текст в пределах строки >
-            <td><span class="percentage">60.00%</span></td>
-        </tr>
-        <tr>  <!Контейнер таблицы >
-            <td>Your Total Score</td> <! Текст в пределах строки >
-            <td><span class="total-score">3 / 5</span></td>
+        <tr>  
+            <td>Общаяя оценка</td>
+            <td><span class="total-score"></span></td>
         </tr>
     </table>
-    <button onclick="reset()" type="button" class="btn">Try Again</button>
+    <button onclick="reset()" type="button" class="btn">Начать сначала</button>
     
 </div>
 

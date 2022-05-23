@@ -75,11 +75,38 @@ body{
 
 
 }
+.select-category {
+height: 45px;
+width: 45px;
+
+}
+button.select-category {
+    width: 172px;
+    height: 41px;
+    margin-left: 385px;
+    margin-top: -37px;
+    position: relative;
+    right: 28px;
+    bottom: 48px;
+}
+
 
 /* Параметры маленькой кнопки */
 .btn{
     padding: 15px 45px;
     background-color: #355435;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn2{
+    padding: 15px 45px;
+    background-color: #cfd6cf;
     color: aliceblue;
     border: none;
     border-radius: 5px;

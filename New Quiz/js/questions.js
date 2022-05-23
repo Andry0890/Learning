@@ -9,6 +9,12 @@ const quiz = [
     },
 
     {
+        q: "Как назывался JavaScript в самом начале своего создания?",
+        options: ["Java","Ecmascript","TypeScript","Mocha","LiveScript"],
+        answers:4
+    },
+
+    {
         q: 'What do pandas eat?',
         options: ['Bamboo','Insects','Meat','Fruit','Vegetables'],
         answers:1
