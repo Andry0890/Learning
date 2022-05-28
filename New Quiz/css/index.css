@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body{
+    margin:0;
+    font-size:16px;
+    background-color: #181d1d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:#cccccc;
+    text-align: center
+
+}
+
+.btn{
+    padding: 15px 45px;
+    background-color: #e3b80cba;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}

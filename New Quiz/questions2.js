@@ -1,12 +1,38 @@
 
 
+
 const js = [
+    {
+        q: "Как назывался JavaScript в самом начале своего создания?",
+        options: ["Java","Ecmascript","TypeScript","Mocha","LiveScript"],
+        answers:4
+    },
+
+    {
+        q: "?",
+        options: ["Java","Ecmascript","TypeScript","Mocha","LiveScript"],
+        answers:4
+    },
+
+    {
+        q: "Как назывался JavaScript в самом начале своего создания?",
+        options: ["Java","Ecmascript","TypeScript","Mocha","LiveScript"],
+        answers:4
+    },
+
+    {
+        q: "Как назывался JavaScript в самом начале своего создания?",
+        options: ["Java","Ecmascript","TypeScript","Mocha","LiveScript"],
+        answers:4
+    },
+
     {
         q: "Как назывался JavaScript в самом начале своего создания?",
         options: ["Java","Ecmascript","TypeScript","Mocha","LiveScript"],
         answers:4
     }
 ];
+
 const html = [
     {
         q: "Тэг, подключающий к существующему HTML-документу скрипты, которые выполняются на клиентской стороне?",
@@ -17,7 +43,7 @@ const html = [
 const css = [
     {
         q: "Какой из приведённых вариантов не является допустимым значением свойства border-style?",
-        options: ["dotted","inset","glazed","glazed","solid"],
+        options: ["dotted","inset","glazed","hide","solid"],
         answers:3
     }
 ];
@@ -84,3 +110,18 @@ const https = [
         answers:4
     }
 ];
+            
+            
+let categoryQuiz = {
+    'javascript': js,
+    'html' : html,
+    'css' : css,
+    'php' : php,
+    'react' : react,
+    'angular' : angular,
+    'github' : github,
+    'phyton' : phyton,
+    'nodejs' : nodejs,
+    'typescript' : typescript,
+    'https' : https
+};

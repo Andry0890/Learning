@@ -2,9 +2,10 @@
 body{
     margin:0;
     font-size:16px;
-    background-color: #689374;
+    background-color: #181d1d;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color:#cccccc;
 
 }
 /* Обращение к общему расположению файла */
@@ -18,11 +19,11 @@ body{
 /* Параметры инструкции */
 .custome-box{
     max-width: 700px;
-    background-color: #8aa58a;
+    background-color: #363936b0;
     margin:100px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0px #00000059;
+    box-shadow: 0 0 20px 0px #1b1a1a59;
 
 }
 .custome-box::before,
@@ -38,7 +39,7 @@ body{
 /* Размер текста инструкции */
 .home-box h2{
     font-size: 18px;
-    color: black;
+    color: #453448;
     font-weight: 500;
     margin-bottom: 15px;
 
@@ -48,7 +49,7 @@ body{
     font-size: 18px;
     margin-bottom: 10px;
     line-height: 22px;
-    color: black;
+    color: rgb(54, 53, 53);
     font-weight: 400;
 
 }
@@ -66,7 +67,7 @@ body{
 .Btn {
     padding: 15px 45px;
     background-color: darkgreen;
-    color: antiquewhite;
+    color: #cddf29c5;
     border: none;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -94,7 +95,7 @@ button.select-category {
 /* Параметры маленькой кнопки */
 .btn{
     padding: 15px 45px;
-    background-color: #355435;
+    background-color: #e3b80cba;
     color: aliceblue;
     border: none;
     border-radius: 5px;
@@ -106,8 +107,8 @@ button.select-category {
 
 .btn2{
     padding: 15px 45px;
-    background-color: #cfd6cf;
-    color: aliceblue;
+    background-color: #3ce33cae;
+    color: #46c7179c;
     border: none;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -128,7 +129,7 @@ button.select-category {
 
 .Quiz-box .question-number {
     font-size: 18px;
-    color: darkgreen;
+    color: #4871b7;
     font-weight: 500;;
     padding-bottom: 10px;
     line-height: 25px;
@@ -137,7 +138,7 @@ button.select-category {
 /* Параметры текста вопросов */
 .Quiz-box .question-text{
    font-size:22px;
-    color: black;
+    color: #918f8f;
     line-height: 28px;
     font-weight: 400;
     padding: 20px 0;

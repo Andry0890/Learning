@@ -1,22 +1,11 @@
 
-console.log(quiz[0]);
+
 let currentQuestionIndex= 0;
 let category;
 let answers = [];
 let quizBox = document.querySelector('.Quiz-box');
 let resultBox = document.querySelector(".result-box");
-
-let javascript = document.getElementById("js");
-let html = document.getElementById("html");
-let css = document.getElementById("css");
-let php = document.getElementById("php");
-let react = document.getElementById("react");
-let angular = document.getElementById("angular");
-let github = document.getElementById("github");
-let phyton = document.getElementById("phyton");
-let cplus = document.getElementById("c++");
-let typescript = document.getElementById("typescript");
-let https = document.getElementById("https");
+let quiz ;
 
 
 function onNext() {
@@ -30,10 +19,27 @@ function onNext() {
 function init() {
     currentQuestionIndex = 0;
     answers = [];
-    category = new URL(window.location.href).searchParams.get("category")
-    console.log("Категория", category)
+   
+    initQuiz();
     renderQuiz();
 }
+
+function initQuiz() {
+    // //if ( category === 'javascript'){
+    //     quiz = js;
+    // }else if ( category === 'html') {
+    //     quiz = html;
+    // } else {
+    //     quiz = css;
+    // }
+    category = new URL(window.location.href).searchParams.get("category")
+    console.log("Категория", category);
+   quiz = categoryQuiz[category];
+   if (quiz === undefined) {
+       alert ('Такой категории не существует!');
+   }
+}
+
 
 function renderResult() {
     quizBox.classList.add("hide");
@@ -48,7 +54,7 @@ function renderResult() {
     let totalCorrect = document.querySelector(".total-correct");
 
     for (let i = 0; i < answers.length; i++) {
-        let answer = answers[i]
+        let answer = answers[i];
         if (quiz[answer.quizIndex].answers - 1 === answer.optionIndex) {
             rightAnswers++;
         } else {
