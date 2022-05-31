@@ -1,54 +1,40 @@
 body {
-    background: #689374;
+    background: #181d1d;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.custome-box {
+.choosing-category {
     max-width: 700px;
-    background-color: #8aa58a;
+    background-color: #242828;
     margin:100px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0px #00000059;
+    box-shadow: 0 0 20px 0px #bac6c957;
     width: 700px;
     height: 480px;
 
 }
 
-.custome-box h1 {
+.choosing-category h1 {
     font-size: 40px;
-    color: black;
+    color: rgb(89, 108, 121);
     font-weight: 500;
     margin-bottom: 15px;
     text-align: center
 }
  
-  button.select-category {
-    width: 172px;
-    height: 41px;
-    margin-left: 385px;
-    margin-top: -37px;
-    position: relative;
-    right: 28px;
-    bottom: 48px;
-}
-
-
-
-
-
-  .grid {
+  .selection-icons {
     display: grid;
     grid-template-columns: repeat(4, 175px);
     grid-template-rows: repeat(3, 130px);
   } 
 
-  .grid > * {
-    background-color: #c5d1c8;
+  .selection-icons > * {
+    background-color: #77a09c;
     border-radius: 10px;
     margin: 3px;
     text-align: center;
-    box-shadow: 0 0 7px 0px #315745;
+    box-shadow: 0 0 7px 0px #7c8983;
   }
   
 

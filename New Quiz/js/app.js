@@ -31,15 +31,17 @@ function initQuiz() {
     //     quiz = html;
     // } else {
     //     quiz = css;
-    // }
-    category = new URL(window.location.href).searchParams.get("category")
+    const searchParams = new URL(window.location.href).searchParams
+    category = searchParams.get("category");
     console.log("Категория", category);
+    searchParams.forEach((value, key) => {
+        console.log(key,'='+ value);
+    })
    quiz = categoryQuiz[category];
    if (quiz === undefined) {
        alert ('Такой категории не существует!');
    }
 }
-
 
 function renderResult() {
     quizBox.classList.add("hide");

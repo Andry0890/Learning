@@ -19,11 +19,11 @@ body{
 /* Параметры инструкции */
 .custome-box{
     max-width: 700px;
-    background-color: #363936b0;
+    background-color: #242828;
     margin:100px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0px #1b1a1a59;
+    box-shadow: 0 0 20px 0px #bac6c957;
 
 }
 .custome-box::before,
@@ -66,8 +66,8 @@ body{
 /* Параметры большой кнопки */
 .Btn {
     padding: 15px 45px;
-    background-color: darkgreen;
-    color: #cddf29c5;
+    background-color: rgba(65, 163, 138, 0.755);
+    color: #9ea844c5;
     border: none;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -95,7 +95,7 @@ button.select-category {
 /* Параметры маленькой кнопки */
 .btn{
     padding: 15px 45px;
-    background-color: #e3b80cba;
+    background-color: #aa4144ba;
     color: aliceblue;
     border: none;
     border-radius: 5px;
@@ -107,7 +107,7 @@ button.select-category {
 
 .btn2{
     padding: 15px 45px;
-    background-color: #3ce33cae;
+    background-color: #4fa376d3;
     color: #46c7179c;
     border: none;
     border-radius: 5px;
@@ -129,7 +129,7 @@ button.select-category {
 
 .Quiz-box .question-number {
     font-size: 18px;
-    color: #4871b7;
+    color: #4e9493c0;
     font-weight: 500;;
     padding-bottom: 10px;
     line-height: 25px;
@@ -148,7 +148,7 @@ button.select-category {
 /* Параметры окна вопросов */
 
 .Quiz-box .option-container .option{
-    background-color:#cccccc;
+    background-color:#8ca8a4;
     padding: 13px 15px;
     font-size: 16px;
     line-height: 22px;
@@ -160,8 +160,8 @@ button.select-category {
     transition: all 100ms ease-out;
 }
 .option-container .option:hover {
-    box-shadow: 0 0 20px 0px #0000002e;
-    background-color: #fff;
+    box-shadow: 0 0 20px 0px #1a27272e;
+    background-color: #5d7070;
 }
 /* обращение к маленькой кнопке*/
 .Quiz-box .btn{
@@ -189,7 +189,7 @@ button.select-category {
 .result-box h1{
     font-size: 36px;
     line-height: 42px;
-    color: darkgreen;
+    color: rgb(75, 127, 120);
 }
 .result-box table{
     width: 100%;
@@ -200,7 +200,7 @@ button.select-category {
     border: 1px solid #cccccc;
     padding: 8px 15px;
     font-weight: 500;
-    color: #000000;
+    color: #7cc5bf;
     width: 50%;
     text-align: left;
     font-size: 18px;
@@ -211,4 +211,39 @@ button.select-category {
 
 }
 
+
+
+.choosing-category {
+    max-width: 700px;
+    background-color: #8aa58a;
+    margin:100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px #00000059;
+    width: 700px;
+    height: 480px;
+
+}
+
+.choosing-category h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center
+}
+ 
+  .selection-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 175px);
+    grid-template-rows: repeat(3, 130px);
+  } 
+
+  .selection-icons > * {
+    background-color: #c5d1c8;
+    border-radius: 10px;
+    margin: 3px;
+    text-align: center;
+    box-shadow: 0 0 7px 0px #315745;
+  }
 
