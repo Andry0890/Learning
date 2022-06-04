@@ -25,12 +25,6 @@ function init() {
 }
 
 function initQuiz() {
-    // //if ( category === 'javascript'){
-    //     quiz = js;
-    // }else if ( category === 'html') {
-    //     quiz = html;
-    // } else {
-    //     quiz = css;
     const searchParams = new URL(window.location.href).searchParams
     category = searchParams.get("category");
     console.log("Категория", category);
